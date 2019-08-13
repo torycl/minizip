@@ -41,7 +41,7 @@ extern "C" {
 
 #define MZ_PATH_SLASH_UNIX              ('/')
 #if defined(_WIN32)
-#  define MZ_PATH_SLASH_PLATFORM        ('\\')
+#  define MZ_PATH_SLASH_PLATFORM        (MZ_PATH_SLASH_UNIX)
 #else
 #  define MZ_PATH_SLASH_PLATFORM        (MZ_PATH_SLASH_UNIX)
 #endif
